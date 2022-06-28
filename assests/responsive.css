@@ -1,0 +1,43 @@
+@media (min-width:950px){
+  main{
+    min-width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  .container-sections{
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5em;
+    width: 100%;
+    font-size: 2.2vh;
+  }
+
+  main .sec-1 .top, .sec-1 .bottom{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sec-1 .bottom{
+    gap: 1em;
+    justify-content: center;
+    min-height: 40%;
+  }
+  section.sched .contents{
+    max-height: 130px;
+  }
+  
+}
+
+@media (min-width:1230px){
+  body{
+ 
+    min-height: 100vh;
+    margin: 0;
+  }
+  .container-sections{
+    grid-template-columns: repeat(3,1fr);
+  }
+    .contents .two .prev {
+      font-size: 1rem;
+    }
+    
+}

@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-weight: lighter;
+}
+:root {
+  --Blue: hsl(246, 80%, 60%);
+  --Light-red-work: hsl(15, 100%, 70%);
+  --Soft-blue-play: hsl(195, 74%, 62%);
+  --Light-red-study: hsl(348, 100%, 68%);
+  --Lime-green-exercise: hsl(145, 58%, 55%);
+  --Violet-social: hsl(264, 64%, 52%);
+  --Soft-orange-selfcare: hsl(43, 84%, 65%);
+  --Very-darkblue: hsl(226, 43%, 10%);
+  --Dark-blue: hsl(235, 46%, 20%);
+  --Desaturated-blue: hsl(235, 45%, 61%);
+  --Pale-Blue: hsl(236, 100%, 87%);
+}
+body {
+  background-color: var(--Very-darkblue);
+  color: white;
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin: 2em auto;
+  width: 90%;
+  max-width:400px;
+}
+.sec-1 {
+  background-color: var(--Dark-blue);
+  border-radius: 3vmax;
+}
+main .sec-1 .top h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+main .sec-1 .top p {
+  color: #ffffffbe;
+  margin: 0.2rem 0;
+}
+main .sec-1 .top {
+  background-color: var(--Blue);
+  display: flex;
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  border-radius: 3vmax;
+  min-height: 60%;
+  min-width: 300px;
+}
+
+main .sec-1 .top .photo {
+  background-image: url("../images/image-jeremy.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  border: 3px solid white;
+}
+.sec-1 .bottom {
+  display: flex;
+  padding: 2em;
+  font-size: 1.1rem;
+  justify-content: space-around;
+  
+}
+.sec-1 .bottom div {
+  cursor: pointer;
+  color: var(--Desaturated-blue);
+  font-weight: 500;
+}
+.sec-1 .bottom div:not(.active):hover {
+  color: var(--Pale-Blue);
+}
+/* end of section 1 */
+
+section.sched {
+  min-width: 280px;
+  max-width: 450px;
+  max-height: 400px;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-position: 95% -9%;
+  background-color: var(--Light-red-work);
+  border-radius: 3vmax;
+  display: flex;
+}
+
+section.sched .contents {
+  background-color: var(--Dark-blue);
+  border-radius: 3vmax;
+  padding: 0.5em 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3em;
+  margin-top: auto;
+  width: 100%;
+ min-height: 160px;
+}
+
+.contents .two {
+  text-align: right;
+}
+.contents .two .prev,
+.contents .one .curr {
+  margin-top: 1.5rem;
+}
+
+.bottom div.active{
+  color:white;
+  transform: scale(1.2);
+}
+
+.container-sections{
+  font-size: 2.5vh;
+
+  display:grid;
+  gap:2em 0em;
+}
